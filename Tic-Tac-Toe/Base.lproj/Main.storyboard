@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,12 +13,79 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tic_Tac_Toe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wxc-le-mrS">
+                                <rect key="frame" x="0.0" y="1322" width="1024" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="0pP-AF-mSy"/>
+                                    <barButtonItem title="New Game" id="kAh-pR-22a">
+                                        <connections>
+                                            <action selector="presssedNewGame:" destination="BYZ-38-t0r" id="UcV-1e-RJu"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4f-5A-kw3">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="2a4-h8-4jZ">
+                                        <barButtonItem key="leftBarButtonItem" title="New Game" id="hbP-ZJ-MFm">
+                                            <connections>
+                                                <action selector="presssedNewGame:" destination="BYZ-38-t0r" id="jF6-E4-fsd"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="g4f-5A-kw3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2LJ-mx-CKC"/>
+                            <constraint firstItem="Wxc-le-mrS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="S61-eF-zwz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wxc-le-mrS" secondAttribute="bottom" id="UqH-dY-cy5"/>
+                            <constraint firstItem="g4f-5A-kw3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aW1-jC-SCB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g4f-5A-kw3" secondAttribute="trailing" id="e0e-Cc-Xpo"/>
+                            <constraint firstAttribute="trailing" secondItem="Wxc-le-mrS" secondAttribute="trailing" id="k5V-Nz-U3Z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Wxc-le-mrS"/>
+                                <exclude reference="g4f-5A-kw3"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2LJ-mx-CKC"/>
+                                <exclude reference="aW1-jC-SCB"/>
+                                <exclude reference="UqH-dY-cy5"/>
+                                <exclude reference="e0e-Cc-Xpo"/>
+                                <exclude reference="S61-eF-zwz"/>
+                                <exclude reference="k5V-Nz-U3Z"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Wxc-le-mrS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="UqH-dY-cy5"/>
+                                <include reference="S61-eF-zwz"/>
+                                <include reference="k5V-Nz-U3Z"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="g4f-5A-kw3"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2LJ-mx-CKC"/>
+                                <include reference="aW1-jC-SCB"/>
+                                <include reference="e0e-Cc-Xpo"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
