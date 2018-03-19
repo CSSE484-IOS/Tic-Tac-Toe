@@ -31,7 +31,7 @@
                                 </items>
                             </toolbar>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4f-5A-kw3">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="32"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="2a4-h8-4jZ">
                                         <barButtonItem key="leftBarButtonItem" title="New Game" id="hbP-ZJ-MFm">
@@ -47,13 +47,79 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98K-6c-if2" userLabel="Board">
                                         <rect key="frame" x="20" y="159" width="374" height="414"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sOF-vg-DFS">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="414"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MOb-CJ-iCu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="138"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JS3-xu-8oh">
+                                                                <rect key="frame" x="0.0" y="0.0" width="124.66666666666667" height="138"/>
+                                                                <state key="normal" backgroundImage="iPhone_X"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBO-JF-MPq">
+                                                                <rect key="frame" x="124.66666666666666" y="0.0" width="124.66666666666666" height="138"/>
+                                                                <state key="normal" backgroundImage="iPhone_X"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eb7-8u-3xF">
+                                                                <rect key="frame" x="249.33333333333329" y="0.0" width="124.66666666666666" height="138"/>
+                                                                <state key="normal" backgroundImage="iPhone_X"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qZX-cI-6Uv">
+                                                        <rect key="frame" x="0.0" y="138" width="374" height="138"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I05-Ht-aZU">
+                                                                <rect key="frame" x="0.0" y="0.0" width="124.66666666666667" height="138"/>
+                                                                <state key="normal" backgroundImage="iPhone_X"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ay9-3X-udw">
+                                                                <rect key="frame" x="124.66666666666666" y="0.0" width="124.66666666666666" height="138"/>
+                                                                <state key="normal" backgroundImage="iPhone_X"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZ6-bB-Zeb">
+                                                                <rect key="frame" x="249.33333333333329" y="0.0" width="124.66666666666666" height="138"/>
+                                                                <state key="normal" backgroundImage="iPhone_X"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yaS-0G-XoV">
+                                                        <rect key="frame" x="0.0" y="276" width="374" height="138"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3f-fL-HOb">
+                                                                <rect key="frame" x="0.0" y="0.0" width="124.66666666666667" height="138"/>
+                                                                <state key="normal" backgroundImage="iPhone_X"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GsR-iX-1Zf">
+                                                                <rect key="frame" x="124.66666666666666" y="0.0" width="124.66666666666666" height="138"/>
+                                                                <state key="normal" backgroundImage="iPhone_X"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcR-Og-Rim">
+                                                                <rect key="frame" x="249.33333333333329" y="0.0" width="124.66666666666666" height="138"/>
+                                                                <state key="normal" backgroundImage="iPhone_X"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
                                         <color key="backgroundColor" red="1" green="0.55818971799999995" blue="0.27202012809999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="sOF-vg-DFS" secondAttribute="bottom" id="4HL-HG-KTw"/>
+                                            <constraint firstItem="sOF-vg-DFS" firstAttribute="top" secondItem="98K-6c-if2" secondAttribute="top" id="8up-iR-bvF"/>
+                                            <constraint firstAttribute="height" constant="670" id="BaN-OU-SRm"/>
                                             <constraint firstAttribute="width" secondItem="98K-6c-if2" secondAttribute="height" multiplier="28:31" id="OUd-yV-a9J"/>
+                                            <constraint firstItem="sOF-vg-DFS" firstAttribute="leading" secondItem="98K-6c-if2" secondAttribute="leading" id="Tng-fm-gpP"/>
+                                            <constraint firstAttribute="trailing" secondItem="sOF-vg-DFS" secondAttribute="trailing" id="VJd-1x-7gB"/>
+                                            <constraint firstAttribute="width" constant="670" id="ur2-XP-9KV"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
+                                                <exclude reference="BaN-OU-SRm"/>
                                                 <exclude reference="OUd-yV-a9J"/>
+                                                <exclude reference="ur2-XP-9KV"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact">
@@ -61,28 +127,65 @@
                                                 <include reference="OUd-yV-a9J"/>
                                             </mask>
                                         </variation>
+                                        <variation key="widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="BaN-OU-SRm"/>
+                                                <include reference="ur2-XP-9KV"/>
+                                            </mask>
+                                        </variation>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7FK-NY-1SM">
+                                        <rect key="frame" x="20" y="99" width="374" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.2371735344" green="0.76118137880000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="7FK-NY-1SM" secondAttribute="trailing" constant="20" id="00U-KK-frM"/>
+                                    <constraint firstItem="98K-6c-if2" firstAttribute="centerX" secondItem="JMT-Vx-szG" secondAttribute="centerX" id="Bhn-ld-sbh"/>
                                     <constraint firstItem="98K-6c-if2" firstAttribute="centerY" secondItem="JMT-Vx-szG" secondAttribute="centerY" id="E3w-In-hd2">
                                         <variation key="widthClass=compact" constant="30"/>
                                     </constraint>
                                     <constraint firstAttribute="trailing" secondItem="98K-6c-if2" secondAttribute="trailing" constant="20" id="e4p-rO-D56"/>
+                                    <constraint firstItem="98K-6c-if2" firstAttribute="top" secondItem="7FK-NY-1SM" secondAttribute="bottom" constant="12" id="tAM-ZK-RhW"/>
                                     <constraint firstItem="98K-6c-if2" firstAttribute="leading" secondItem="JMT-Vx-szG" secondAttribute="leading" constant="20" id="vo0-2V-Hj8"/>
+                                    <constraint firstItem="98K-6c-if2" firstAttribute="centerY" secondItem="JMT-Vx-szG" secondAttribute="centerY" id="x04-r3-a3y"/>
+                                    <constraint firstItem="7FK-NY-1SM" firstAttribute="leading" secondItem="JMT-Vx-szG" secondAttribute="leading" constant="20" id="yzZ-Cz-vzm"/>
                                 </constraints>
                                 <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="7FK-NY-1SM"/>
+                                    </mask>
                                     <mask key="constraints">
+                                        <exclude reference="Bhn-ld-sbh"/>
                                         <exclude reference="E3w-In-hd2"/>
                                         <exclude reference="e4p-rO-D56"/>
+                                        <exclude reference="tAM-ZK-RhW"/>
                                         <exclude reference="vo0-2V-Hj8"/>
+                                        <exclude reference="x04-r3-a3y"/>
+                                        <exclude reference="00U-KK-frM"/>
+                                        <exclude reference="yzZ-Cz-vzm"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="7FK-NY-1SM"/>
+                                    </mask>
                                     <mask key="constraints">
                                         <include reference="E3w-In-hd2"/>
                                         <include reference="e4p-rO-D56"/>
+                                        <include reference="tAM-ZK-RhW"/>
                                         <include reference="vo0-2V-Hj8"/>
+                                        <include reference="00U-KK-frM"/>
+                                        <include reference="yzZ-Cz-vzm"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Bhn-ld-sbh"/>
+                                        <include reference="x04-r3-a3y"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -151,4 +254,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="iPhone_X" width="86" height="98"/>
+    </resources>
 </document>
