@@ -15,6 +15,7 @@
 		1BE293A720600A0B007F659E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE293A420600A0B007F659E /* Icon.png */; };
 		1BE293A820600A0B007F659E /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE293A520600A0B007F659E /* Icon@2x.png */; };
 		1BE293A920600A0B007F659E /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE293A620600A0B007F659E /* Icon-72.png */; };
+		1BE293AB20601537007F659E /* TicTacToeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE293AA20601537007F659E /* TicTacToeGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1BE293A420600A0B007F659E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		1BE293A520600A0B007F659E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		1BE293A620600A0B007F659E /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		1BE293AA20601537007F659E /* TicTacToeGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				1BE29398205AD093007F659E /* Assets.xcassets */,
 				1BE2939A205AD093007F659E /* LaunchScreen.storyboard */,
 				1BE2939D205AD093007F659E /* Info.plist */,
+				1BE293AA20601537007F659E /* TicTacToeGame.swift */,
 			);
 			path = "Tic-Tac-Toe";
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE293AB20601537007F659E /* TicTacToeGame.swift in Sources */,
 				1BE29394205AD093007F659E /* ViewController.swift in Sources */,
 				1BE29392205AD093007F659E /* AppDelegate.swift in Sources */,
 			);
